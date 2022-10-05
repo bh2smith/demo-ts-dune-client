@@ -10,3 +10,17 @@ cd demo-ts-dune-client
 yarn
 npx ts-node src/index.ts
 ```
+
+
+Will yield the following output in your shell:
+
+```sh
+[
+  {
+    date_field: '2022-05-04 00:00:00',
+    list_field: 'Option 1',
+    number_field: '3.1415926535',
+    text_field: 'Plain Text'
+  }
+]
+```
