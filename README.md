@@ -8,6 +8,7 @@ Small repo demonstrating how to use the ts-dune-client
 git clone git@github.com:bh2smith/demo-ts-dune-client.git
 cd demo-ts-dune-client
 yarn
+export DUNE_API_KEY=<YOUR-DUNE-API-KEY>
 npx ts-node src/index.ts
 ```
 
