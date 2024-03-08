@@ -1,5 +1,5 @@
 {
-  "name": "@cowprotocol/test",
+  "name": "dune-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,11 +7,11 @@
     "build": "tsc",
     "test": "npx ts-node src/index.ts"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ben Smith (@bh2smith)",
+  "license": "MIT",
   "dependencies": {
-    "@cowprotocol/ts-dune-client": "^0.0.0-beta.2",
-    "@types/node": "^18.8.2",
-    "typescript": "^4.8.4"
+    "@duneanalytics/client-sdk": "^0.0.5",
+    "@types/node": "^18.19.22",
+    "typescript": "^4.9.5"
   }
 }
