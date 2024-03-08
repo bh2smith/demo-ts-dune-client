@@ -1,5 +1,5 @@
 # demo-ts-dune-client
-Small repo demonstrating how to use the ts-dune-client
+Small repo demonstrating how to use [@duneanalytics/client-sdk](https://www.npmjs.com/package/@duneanalytics/client-sdk)
 
 
 ## Clone, install, set ENV and Run
@@ -8,12 +8,17 @@ Small repo demonstrating how to use the ts-dune-client
 git clone git@github.com:bh2smith/demo-ts-dune-client.git
 cd demo-ts-dune-client
 yarn
-export DUNE_API_KEY=<YOUR-DUNE-API-KEY>
-npx ts-node src/index.ts
 ```
 
+```sh
+export DUNE_API_KEY=<YOUR-DUNE-API-KEY>
+```
 
-Will yield the following output in your shell:
+```sh
+yarn test
+```
+
+Should yield the following output in your shell:
 
 ```sh
 [
