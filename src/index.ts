@@ -3,8 +3,8 @@ import { QueryParameter, DuneClient } from "@duneanalytics/client-sdk";
 const { DUNE_API_KEY } = process.env;
 
 const client = new DuneClient(DUNE_API_KEY ?? "");
-const queryID = 1215383;
-const params = [
+const queryId = 1215383;
+const query_parameters = [
   QueryParameter.text("TextField", "Plain Text"),
   QueryParameter.number("NumberField", 3.1415926535),
   QueryParameter.date("DateField", "2022-05-04 00:00:00"),
@@ -14,4 +14,4 @@ const params = [
 // Exclude the debug logs from lower level dependency.
 // console.debug = function () {};
 
-client.runQuery(queryID, {query_parameters: params}).then((executionResult) => console.log(executionResult.result?.rows));
+client.runQuery({queryId, query_parameters}).then((executionResult) => console.log(executionResult.result?.rows));
