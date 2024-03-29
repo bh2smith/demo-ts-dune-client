@@ -19,12 +19,14 @@ jobs:
       - name: Get list of changed files in a specific directory
         id: get-changed-files
         run: |
-          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- queries | paste -sd "," -)
+          CHANGED_FILES=$(git diff \
+            --name-only ${{ github.event.before }} ${{ github.sha }} \
+            -- queries | paste -sd "," -)
           echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_ENV
           echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
 
       - name: Update Queries
-        uses: bh2smith/dune-update@v0.0.0-beta.2
+        uses: bh2smith/dune-update
         with:
           changedQueries: ${{ steps.get-changed-files.outputs.changed_files }}
           duneApiKey: ${{ secrets.DUNE_API_KEY }}
