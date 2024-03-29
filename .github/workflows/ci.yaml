@@ -27,5 +27,5 @@ jobs:
       - name: Update Queries
         uses: bh2smith/dune-update@v0.0.0-beta
         with:
-          changedQueries: $CHANGED_FILES
+          changedQueries: ${{ steps.get-changed-files.outputs.changed_files }}
           duneApiKey: ${{ secrets.DUNE_API_KEY }}
