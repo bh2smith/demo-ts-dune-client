@@ -26,7 +26,7 @@ jobs:
           echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
 
       - name: Update Queries
-        uses: bh2smith/dune-update
+        uses: bh2smith/dune-update@v0.0.0-beta.2
         with:
           changedQueries: ${{ steps.get-changed-files.outputs.changed_files }}
           duneApiKey: ${{ secrets.DUNE_API_KEY }}
