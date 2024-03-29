@@ -4,7 +4,7 @@ select
 from
   prices.usd
 where
-  blockchain = 'ethereum'
+  blockchain = '{{Network}}'
   and date_trunc('year', minute) = cast('{{YEAR}}-01-01' as timestamp)
   and contract_address = from_hex('{{TokenAddress}}')
 group by

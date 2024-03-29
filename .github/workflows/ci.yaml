@@ -19,10 +19,9 @@ jobs:
       - name: Get list of changed files in a specific directory
         id: get-changed-files
         run: |
-          # Replace 'your/specific/directory/' with the path to your directory
           CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- queries | paste -sd "," -)
           echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_ENV
-          echo "::set-output name=changed_files::$CHANGED_FILES"
+          echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
 
       - name: Update Queries
         uses: bh2smith/dune-update@v0.0.0-beta
