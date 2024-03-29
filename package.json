@@ -5,7 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "build": "tsc",
-    "test": "npx ts-node src/index.ts"
+    "test": "npx ts-node src/index.ts",
+    "fmt": "npx prettier --write ."
   },
   "author": "Ben Smith (@bh2smith)",
   "license": "MIT",
@@ -13,5 +14,8 @@
     "@duneanalytics/client-sdk": "^0.1.3",
     "@types/node": "^20.11.30",
     "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
   }
 }

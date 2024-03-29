@@ -14,4 +14,6 @@ const query_parameters = [
 // Exclude the debug logs from lower level dependency.
 // console.debug = function () {};
 
-client.runQuery({queryId, query_parameters}).then((executionResult) => console.log(executionResult.result?.rows));
+client
+  .runQuery({ queryId, query_parameters })
+  .then((response) => console.log(response.result?.rows));
