@@ -1,11 +1,11 @@
-select
-  date_trunc('day', minute) as day,
-  avg(price) as price
-from
+SELECT
+  date_trunc('day', minute) AS day,
+  avg(price) AS price
+FROM
   prices.usd
-where
+WHERE
   blockchain = '{{Network}}'
-  and date_trunc('year', minute) = cast('{{YEAR}}-01-01' as timestamp)
-  and contract_address = from_hex('{{TokenAddress}}')
-group by
+  AND date_trunc('year', minute) = CAST('{{YEAR}}-01-01' AS timestamp)
+  AN contract_address = from_hex('{{TokenAddress}}')
+GROUP BY
   date_trunc('day', minute)
