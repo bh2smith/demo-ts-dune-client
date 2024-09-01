@@ -57,4 +57,4 @@ Should yield the following output in your shell:
 
 ## Github Actions
 
-There is a dedicated [github action](https://github.com/marketplace/actions/dune-query-updater) for syncing queries changes to Dune. Check out the [ci.yaml](./.github/workflows/ci.yaml) file to see how its used and observe this [successful run](https://github.com/bh2smith/demo-ts-dune-client/actions/runs/.8480279768)
+There is a dedicated [github action](https://github.com/marketplace/actions/dune-query-updater) for syncing queries changes to Dune. Check out the [ci.yaml](./.github/workflows/ci.yaml) file to see how its used and observe this [successful run](https://github.com/bh2smith/demo-ts-dune-client/actions/)
