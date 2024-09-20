@@ -2,21 +2,21 @@
 # yarn lockfile v1
 
 
-"@duneanalytics/client-sdk@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@duneanalytics/client-sdk/-/client-sdk-0.1.3.tgz#d4305c49765bc5aa1977212fb2c19c6a8f43c8b1"
-  integrity sha512-bMN3nSrHgLDsqxBw0Hhn/Pjz0MzIbzLMLdhdnuEIw7DkRIy3bt2ZGbS2FAPbUD+H+b1GubpRnBbSnLJZS3JVhQ==
+"@duneanalytics/client-sdk@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@duneanalytics/client-sdk/-/client-sdk-0.2.4.tgz#3a9627fcc8d22356bd97bebbd69a4905a38ddf9d"
+  integrity sha512-Znr/AIqq+XBh3ezyvNCEbXn2re6pYeLiWQRJezRHh5lI0EikZNQya1jlQTTr3ZTJi7L8aA5GjEp7RyhF/vfSeA==
   dependencies:
     cross-fetch "^4.0.0"
     deprecated "^0.0.2"
     loglevel "^1.8.0"
 
-"@types/node@^20.11.30":
-  version "20.11.30"
-  resolved "https://registry.npmjs.org/@types/node/-/node-20.11.30.tgz"
-  integrity sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==
+"@types/node@^22.5.5":
+  version "22.5.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.5.5.tgz#52f939dd0f65fc552a4ad0b392f3c466cc5d7a44"
+  integrity sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA==
   dependencies:
-    undici-types "~5.26.4"
+    undici-types "~6.19.2"
 
 cross-fetch@^4.0.0:
   version "4.0.0"
@@ -57,10 +57,10 @@ typescript@^5.4.3:
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.4.3.tgz"
   integrity sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==
 
-undici-types@~5.26.4:
-  version "5.26.5"
-  resolved "https://registry.npmjs.org/undici-types/-/undici-types-5.26.5.tgz"
-  integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
+undici-types@~6.19.2:
+  version "6.19.8"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
+  integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
